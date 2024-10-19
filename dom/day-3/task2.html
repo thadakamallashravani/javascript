@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+</head>
+<body>
+    <style>
+    input{
+        margin-top: 10%;
+        width: 20%;
+    }
+    .container{
+        margin-top: 1%;
+        padding: 2% 0 0 20%;
+        color: green;
+    }
+    </style>
+</head>
+<body>
+   <form action="">
+    <label for="in">Enter your Password:</label>
+    <input type="password" id="in">
+    <button type="submit" value="submit">Submit</button>
+   </form>
+     <div class="container"></div>
+        <script>
+            let in1=document.getElementById("in");
+            let button=document.getElementsByTagName("button")[0];
+            button.addEventListener("click",function(event){
+              event.preventDefault();
+             if (in1.value.length==""|| in1.value.length==0){
+              document.getElementsByClassName("container")[0].innerHTML="Invalid Password";
+            }
+            else if(in1.value.length<8){
+            document.getElementsByClassName("container")[0].innerHTML="Your Password is weak";
+            }
+            else if(in1.value.length<12){
+            document.getElementsByClassName("container")[0].innerHTML="Your Password is Medium";
+            }
+            else{
+            document.getElementsByClassName("container")[0].innerHTML="Your password is Strong";
+            }
+            console.log(in1.value);
+            })
+        </script>
+</body>
+</html>
