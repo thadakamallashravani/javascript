@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    Temperature Check
+    var a=prompt("Enter temperature");
+     var b=a>30?"Hot": (a<=30)&&(a>=20)?"Warm":(a>10)&&(a<19)?"cool":"Cold";
+       console.log(b);
+    //    Age Group
+    var c=prompt("Enter Age");
+    var d=(c>0)&&(c<=12)?"Child":(c>=13)&&(c<=19)?"Teen":(c>=20)&&(c<=64)?"Adult":(c>=65)?"Senior":"enter age";
+    console.log(d);
+    // Grade Classification
+    var e=prompt("Enter Marks");
+    var f=(e>=90)&&(e<=100)?" A":(e>=75)&&(e<90)?"B":(e>=60)&&(e<=75)?"C":(e>=45)&&(e<=60)?"D":(e<45)?"F":"Enter Grade";
+    console.log(f);
+    </script>
+</body>
+</html>

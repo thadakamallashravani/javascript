@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    img{
+        margin-left: 20%;
+        margin-top: 5%;
+        border: 2px ;
+    }
+    button{
+        padding: 20px;
+        background-color: white;
+    }
+    #button1{
+        margin-left: 40%;  
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://tse3.mm.bing.net/th?id=OIP.3eUCJbBrSppvDnPivRL0uQHaDe&pid=Api&P=0&h=180" id="img" alt="" height="50%" width="50%">
+    </div><br><br>
+   <button id="button1">HTML</button>
+   <button id="button2">CSS</button>
+   <button id="button3">JAVASCRIPT</button>
+   <button id="button4">REACT</button>
+   <script>
+    var image=document.getElementById("img")
+    var button=document.getElementById("button1")
+    button.addEventListener("click",()=>{
+        image.src="https://tse1.mm.bing.net/th?id=OIP.VwDiJpSwzGBP7oQAB15rkAHaEK&pid=Api&P=0&h=180";
+    });
+    var button=document.getElementById("button2")
+    button.addEventListener("click",()=>{
+        image.src="https://tse4.mm.bing.net/th?id=OIP.Z7oz-UE96cn06LU5Uid04gHaEK&pid=Api&P=0&h=180";
+    });
+    var button=document.getElementById("button3")
+    button.addEventListener("click",()=>{
+        image.src="https://gteconlinelearning.com/wp-content/uploads/2020/05/javascript.jpg";
+    });
+    var button=document.getElementById("button4")
+    button.addEventListener("click",()=>{
+        image.src="https://tse2.mm.bing.net/th?id=OIP.EntHChgUyirgbZ9A3zTxkAHaFj&pid=Api&P=0&h=180";
+    });
+   </script>
+</body>
+</html>

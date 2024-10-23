@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pssword matcher</title>
+    <style>
+        input{
+        margin-top: 2%;
+        width: 10%;
+    }
+    .container{
+        margin-top: 1%;
+        padding: 2% 0 0 10%;
+        color: orange;
+    }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="inp1">Enter your Password:</label>
+        <input type="password" id="inp1"><br>
+        <label for="inp2">Confirm Password:</label>
+        <input type="password" id="inp2"><br><br>
+        <button type="submit" value="submit">Submit</button>
+       </form>
+         <div class="container"></div>
+            <script>
+                let inp1=document.getElementById("inp1");
+                let inp2=document.getElementById("inp2")
+                let button=document.getElementsByTagName("button")[0];
+                button.addEventListener("click",function(event){
+                  event.preventDefault();
+                 if (inp1.value==""|| inp2.value==""){
+                  document.getElementsByClassName("container")[0].innerHTML="Invalid Password";
+                }
+                else if(inp1.value===inp2.value){
+                document.getElementsByClassName("container")[0].innerHTML="Paaword Created Successfully";
+                }
+                else{
+                document.getElementsByClassName("container")[0].innerHTML="Password doesn't match";
+                }
+                console.log(inp1.value);
+                 console.log(inp2.value);
+                })
+            </script>
+</body>
+</html>

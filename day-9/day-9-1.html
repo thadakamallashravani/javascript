@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //TASK-1:Greeting Function
+        function greet(name){
+            return(`Hello,${name}`);
+        }
+      console.log(greet("shravani"));
+      console.log(greet("sreeja"));
+      console.log(greet("junnu"));
+
+      //TASK-2:Sum Function
+      function sum(a,b){
+        console.log(a+b);
+      }
+      sum(4,2);
+      sum(5,5);
+
+      //TASK-3:Square Function
+      function square(a){
+        console.log(a*a);
+      }
+      square(4);
+      square(3);
+      square(10);
+
+     //   task4:Average Function
+     function calAvg(arr) {
+     let sum = 0;
+     for (let i = +0; i < arr.length; i++) {
+        sum += arr[i];
+     }
+     return sum / arr.length;
+     }
+     const arr = [5,2,4,3,7,9];
+     const average = calAvg(arr);
+     console.log( average);
+
+
+     //  task5:Vowels Function
+     function  containsVowels(str){
+      const vowels=['a','e','i','o','u','A','E','I','O','U'];
+      for(let char of str){
+        if(vowels.includes(char)){
+          return true;
+        }
+      }
+      return false;
+     }
+     const testStrings=["junnu","dmsm"];
+     testStrings.forEach(s=>{
+      if (containsVowels(s)){
+        console.log(`${s} contains vowels`);
+      }else{
+        console.log(`${s} doesn't contain vowels`);
+      }
+     });
+
+     //  task:6 Temperature Converter
+     function cToF(celsius) 
+      {
+       var cTemp = celsius;
+       var cToFahr = cTemp * 9 / 5 + 32;
+       var message = cTemp+'\xB0C is ' + cToFahr + ' \xB0F.';
+       console.log(message);
+       }
+     function fToC(fahrenheit) 
+     {
+      var fTemp = fahrenheit;
+      var fToCel = (fTemp - 32) * 5 / 9;
+      var message = fTemp+'\xB0F is ' + fToCel + '\xB0C.';
+      console.log(message);
+      } 
+      cToF(70);
+      fToC(35);
+  </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+   var head=document.createElement("h1");
+    head.innerHTML="<u>"+"THADAKAMALLA SHRAVANI"+"</u>";
+    head.style.textAlign="center"
+    var details=document.createElement("p");
+    details.innerHTML="<b>"+"Mobile:"+"</b>"+ "+91 8555809512  "+"<b>"+"Gmail:"+"</b>"+"<u>" +"seshravani@gmail.com"+"</u>"+"<br><br>"+"<b>"+"LinkedIn:"+"</b>"+"<u>"+ "https://www.linkedin.com/in/thadakamalla-shravani-28a085233"+"</u>"+"<br><br>"+"<b>"+"GitHub:"+"</b>"+"<u>"+ " https://github.com/thadakamallashravani"+"</u>"+"<br><br><br><br>";
+    details.style.textAlign="center"
+    var profile=document.createElement("h2");
+    profile.innerHTML="PROFILE SUMMARY"+"<hr>";
+    var summary=document.createElement("p");
+    summary.innerText="A highly Motivated and adaptable professional with Bachelor's Degree in Electronics and Communication Engineering. Known for exceptional communication and teamwork skills, with a proactive approach to learning and personal greowth.";
+    var education=document.createElement("h2");
+    education.innerHTML="EDUCATION"+"<hr>";
+    var btech=document.createElement("p");
+    btech.innerHTML="Vaageswari College of Engineering,Karimnagar"+"<br><br>"+"B tech (Electronics and Communication Engineering)";
+    var year=document.createElement("p")
+    year.innerHTML="<b>"+"2024"+"</b>"+"<br><br>"+"<b>"+"CGPA:"+"</b>"+"6.62";
+    year.style.textAlign="right";
+    year.style.marginTop="-50px"
+    var projects=document.createElement("h2");
+    projects.innerHTML="PROJECTS"+"<hr>";
+    var phishing=document.createElement("h3")
+    phishing.innerHTML="Vechile Accident Information System Using GPS&GSM"
+    var ul=document.createElement("ul")
+    var li1=document.createElement("li")
+    ul.append(li1)
+    li1.innerText="When the accident occurs the alert message is sent automatically to the resource team and police station. The message is sent through the GSM module and the location of the accident is detected with the help of GPS module";
+    document.body.appendChild(ul)
+    var predicting=document.createElement("h3")
+    predicting.innerHTML="Automatic Car Parking Slot Indicator";
+    var ul1=document.createElement("ul")
+    var li2=document.createElement("li")
+    li2.innerText="Guide the drive to suitable parking space if one is an available."
+    ul1.append(li2)
+    var technical=document.createElement("h2");
+    technical.innerHTML="TECHNICAL SKILLS"+"<hr>";
+    var ul3=document.createElement("ul")
+    var li3=document.createElement("li")
+    var li4=document.createElement("li")
+    var li5=document.createElement("li")
+    var li6=document.createElement("li")
+    var li7=document.createElement("li")
+    li3.innerHTML="<b>"+"Front End Technologies: "+"</b>"+"HTML, CSS, JavaScript, React JS";
+    li4.innerHTML="<b>"+"Frame Works: "+"</b>"+"Bootstrap, Tailwind";
+    li5.innerHTML="<b>"+"Data Base: "+"</b>"+"SQL, Mango DB";
+    li6.innerHTML="<b>"+"Developer Tools: "+"</b>"+" Vs code, Git, GitHub";
+    li7.innerHTML="<b>"+"Programming Languages: "+" </b>Java (Basic)";
+    ul3.append(li3,li4,li5,li6,li7);
+     document.body.appendChild(ul3);
+     var softskills=document.createElement("h2");
+     softskills.innerHTML="SOFT SKILLS"+"<hr>";
+     let ul4=document.createElement("ul");
+        let li8=document.createElement("li");
+        let li9=document.createElement("li");
+        let li10= document.createElement("li");
+        let li11= document.createElement("li");
+        let li12=document.createElement("li");
+        li8.innerText="Communication";
+	    li9.innerHTML="problem-Solving";
+        li10.innerHTML="Adaptability";
+        li11.innerHTML="Time management";
+        li12.innerHTML="Active listening";
+        ul4.append(li8,li9,li10,li11,li12);
+        document.body.appendChild(ul4);
+        var certificates=document.createElement("h2");
+        certificates.innerHTML="CERTIFICATES"+"<hr>";
+        let ul5=document.createElement("ul");
+        let li13=document.createElement("li");
+        li13.innerText="Certification of Virtual Program under Future Ready Talent from Microsoft.";
+        ul5.append(li13)     
+    document.body.append(head,details,profile,summary,education,btech,year,projects,phishing,ul,predicting,ul1,technical,ul3,softskills,ul4,certificates,ul5);
+   </script> 
+</body>
+</html>

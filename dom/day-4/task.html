@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Basic level
+
+        // task-1
+        var f=prompt('Enter the First Name');
+        console.log(f.toUpperCase());
+
+        // task-2
+        var b=prompt('Enter the Middle Name');
+        console.log(b.toLowerCase());
+
+        // task-3
+        var e=prompt('Enter Last Name');
+        console.log(e.split('').reverse().join(""));
+
+        // task-4
+        let a=prompt("Enter a string");
+        console.log(a.match(/[aeiou]/gi).length);
+
+        // Advanced
+
+        // task-1
+        let username=prompt("Enter a username")
+        if(username.length>=5&&username.length<=15){
+        console.log("valid username")
+        }
+         else{
+        console.log("invalid username")
+        }
+
+        // task-2
+        let user1=prompt("Enter Fisrtname")
+        let user2=prompt("Enter Lasttname")
+        console.log(user1.concat('.',user2,"@gmail.com"))
+        
+        // task-3
+        let user = prompt("Enter a sentence");
+        console.log (user.split("").length);
+
+        // task-4
+        let c = prompt("Enter a string")  
+        let d = c.split("").reverse().join("");
+          if (c===d) {
+           console.log("It is a palindrome");
+        } else {
+           console.log("Not a palindrome");  
+        }
+    </script>
+</body>
+</html>
