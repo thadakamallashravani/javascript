@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // task-1
+        let arr=[1,2,3,4,5]
+        let newarr=arr.reduce((acc,val,ind,arr)=>{
+            return acc+val
+        },0)
+        console.log(newarr);
+        
+        // task-2
+              // task-1
+        let arr1=[1,2,3,4,5]
+        let newarr1=arr.reduce((acc,val,ind,arr)=>{
+            return acc+val
+        },0)
+        average=newarr1/arr1.length
+        console.log(average);
+
+        // task-3
+         let people = [
+        { name: "John", age: 17 },
+        { name: "Jane", age: 22 },
+        { name: "Jim", age: 15 },
+        { name: "Jack", age: 19 }
+      ];
+         let adults=people.filter(person => person.age >= 18);
+          console.log(adults); 
+    </script>
+</body>
+</html>
