@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Page</title>
+  <style>
+    body {
+         font-family: Arial, sans-serif; 
+         display: grid; 
+          align-items: center;
+           justify-content: center; 
+           height: 50vh; 
+        }
+    .details { 
+        text-align: center;
+     }
+  </style>
+</head>
+<body onload="displayUserDetails()">
+  <h2>Welcome Page</h2>
+  <div class="details" id="userDetails"></div>
+
+  <script>
+    function displayUserDetails() {
+      const username = sessionStorage.getItem("username");
+      const password = sessionStorage.getItem("password");
+      if (username && password) {
+        document.getElementById("userDetails").innerHTML = `
+          <p>Welcome, <strong>${username}</strong></p>
+          <p>Your password: <strong>${password}</strong></p>
+        `;
+      }
+       else{
+        document.getElementById("userDetails").innerHTML = "<p>No user data found. Please go back and log in.</p>";
+      }
+    }
+  </script>
+</body>
+</html>

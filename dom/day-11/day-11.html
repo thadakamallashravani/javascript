@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body { 
+        font-family: Arial, sans-serif; 
+        display: grid; 
+         align-items: center; 
+         justify-content: center; 
+         height: 50vh; 
+        }
+    form { 
+        display: grid; 
+        width: 270px;
+     }
+    input {
+         margin: 10px 0; 
+         padding: 8px; }
+    button {
+         padding: 10px; 
+         cursor: pointer; 
+        }
+  </style>
+</head>
+<body>
+  <h2>Login Page</h2>
+  <form onsubmit="loginUser(event)">
+    <label for="username">Username:</label>
+    <input type="text" id="username">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password">
+
+    <button type="submit">Login</button>
+  </form>
+  <script>
+    function loginUser(event) {
+      event.preventDefault();   //refreshing the page
+      const username=document.getElementById("username").value;
+      const password=document.getElementById("password").value;
+      sessionStorage.setItem("username", username);
+      sessionStorage.setItem("password", password);
+      window.location.href = "day-11-1.html";
+    }
+  </script>
+</body>
+</html>
